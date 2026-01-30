@@ -1,0 +1,9 @@
+La ubicación de la carpeta: Sistema Economato será la siguiente:
+
+C:\Users\Usuario\AppData\Sistema Economato
+
+Recordar que el archivo .db va a tener la siguiente ruta:
+
+C:\Users\Usuario\AppData\Roaming\ControlEquipos\registros.db
+
+Como vemos todo va a estar en la carpeta AppData (propia del usuario y por lo tanto totalmente accesible pero con la ventaja de que no es una carpeta muy visitada por curiosos)

@@ -1,0 +1,25 @@
+
+PyInstaller SIN .db (antes de ejecutar la aplicación y que se forme el .db)
+
+pyinstaller --onefile --windowed equipos.py
+
+
+Las rutas en el código se resuelven con las siguientes líneas:
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+import os
+
+BASE_DIR = os.path.join(os.getenv("APPDATA"), "ControlEquipos")
+os.makedirs(BASE_DIR, exist_ok=True)
+DB_PATH = os.path.join(BASE_DIR, "registros.db")
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+Explicación:
+
+os.getenv("APPDATA") → C:\Users\TU_USUARIO\AppData\Roaming
+
+os.makedirs(BASE_DIR, exist_ok=True) → crea la carpeta si no existe
+
+registros.db queda fijo y no se pierde nunca
+
+Como se puede ver, el archivo .db va a quedar en: Users -> Usuario -> AppData -> Roaming -> ControlEquipos -> registros.db   (el .db NO VA A QUEDAR JUNTO AL .exe... no es necesario).
