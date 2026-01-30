@@ -282,8 +282,8 @@ ttk.Label(form, text="Equipo").grid(row=1, column=0, padx=5, pady=5)
 equipo_combo = ttk.Combobox(
     form, width=28, state="readonly",
     values=[
-        "Monitor 1", "Monitor 2", "ECG", "Saturómetro",
-        "Otoscopio", "Valija de Traslado", "Videolaringo", "Otro"
+        "Monitor 1", "Monitor 2", "HGT A","HGT B","HGT C", "ECG", "Saturómetro",
+        "Otoscopio", "Valija de Traslado 1", "Valija de Traslado 2", "Videolaringo", "Otro"
     ]
 )
 equipo_combo.grid(row=1, column=1, padx=5, pady=5)
@@ -338,8 +338,8 @@ scroll = ttk.Scrollbar(tabla_frame, orient="vertical", command=tree.yview)
 scroll.pack(side="right", fill="y")
 tree.configure(yscrollcommand=scroll.set)
 
-tree.tag_configure("pendiente", background="#F57E67")
-tree.tag_configure("devuelto", background="#e5ffe5")
+tree.tag_configure("pendiente", background="#FFFF00")
+tree.tag_configure("devuelto", background="#f8f8ff")
 
 # -------------------------------
 # PAGINACIÓN
@@ -361,4 +361,5 @@ btn_siguiente.pack(side="left", padx=5)
 # ===============================
 cargar_registros()
 root.mainloop()
+
 
