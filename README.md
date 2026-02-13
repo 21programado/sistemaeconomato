@@ -40,3 +40,4 @@ IMPORTANTE
 - Si es necesario copiar información, copiar la carpeta completa.
 
 Ante dudas, consultar con el responsable del sistema.
+Para obtener el .exe desde Release puede hacerlo con la url: 
