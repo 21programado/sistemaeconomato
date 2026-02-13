@@ -40,4 +40,4 @@ IMPORTANTE
 - Si es necesario copiar información, copiar la carpeta completa.
 
 Ante dudas, consultar con el responsable del sistema.
-Para obtener el .exe desde Release puede hacerlo con la url: 
+Para obtener el .exe (v1.1) desde Releases puede hacerlo con la url: https://github.com/21programado/sistemaeconomato/releases/latest 
